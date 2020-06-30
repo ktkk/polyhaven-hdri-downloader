@@ -3,7 +3,7 @@
 This script is modified from https://github.com/Alzy/hdrihaven_dl
 
 # Usage
-Need Python 3.
+Needs Python 3.
 Open command line in desired directory and run:
 `pip install -r requirements.txt`
 `python downloader.py`
