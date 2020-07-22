@@ -16,7 +16,7 @@ opener.addheader('User-Agent', ua.chrome)
 url = 'https://hdrihaven.com/hdris/'
 category = 'all'
 resolution = '2k'
-url_category = url + 'category/?c=' + category
+url_category = url + '?c=' + category
 
 r = requests.get(url_category, allow_redirects=True, headers={'User-Agent': ua.chrome})
 soup = BeautifulSoup(r.text, 'html.parser')
