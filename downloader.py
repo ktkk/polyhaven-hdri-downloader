@@ -1,21 +1,29 @@
+#!/usr/bin/python
+
 # Download all hdris from hdrihaven
 
 # Import modules
 import requests
 import os
+from sys import argv
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from urllib.request import urlretrieve
 from urllib.request import URLopener
 from fake_useragent import UserAgent
 
+# arguments
+name, resolution, category = argv
+print("Resolution: ", resolution)
+print("Category: ", category)
+
 ua = UserAgent()
 opener = URLopener()
 opener.addheader('User-Agent', ua.chrome)
 
 url = 'https://hdrihaven.com/hdris/'
-category = 'all'
-resolution = '2k'
+#category = arg_category
+#resolution = arg_resolution
 url_category = url + '?c=' + category
 
 r = requests.get(url_category, allow_redirects=True, headers={'User-Agent': ua.chrome})
@@ -60,3 +68,6 @@ for hdri in hdris:
     opener.retrieve(thumbnail_url, os.path.basename(thumbnail_url))
 
 print('Done')
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

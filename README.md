@@ -9,8 +9,5 @@ Open command line in desired directory and run:
 pip install -r requirements.txt
 ```
 ```bash
-python downloader.py
+python downloader.py <resolution> <category>
 ```
-
-# Todo
-Add parsable arguments like `category` and `resolution`
