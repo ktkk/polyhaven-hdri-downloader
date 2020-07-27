@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Download all hdris from hdrihaven
 
@@ -14,6 +14,7 @@ from fake_useragent import UserAgent
 
 # arguments
 name, resolution, category = argv
+
 print("Resolution: ", resolution)
 print("Category: ", category)
 
@@ -22,8 +23,6 @@ opener = URLopener()
 opener.addheader('User-Agent', ua.chrome)
 
 url = 'https://hdrihaven.com/hdris/'
-#category = arg_category
-#resolution = arg_resolution
 url_category = url + '?c=' + category
 
 r = requests.get(url_category, allow_redirects=True, headers={'User-Agent': ua.chrome})
@@ -68,6 +67,3 @@ for hdri in hdris:
     opener.retrieve(thumbnail_url, os.path.basename(thumbnail_url))
 
 print('Done')
-
-if __name__ == "__main__":
-    main(sys.argv[1:])
