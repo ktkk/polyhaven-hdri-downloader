@@ -1,4 +1,4 @@
-## hdrihaven-downloader (WIP!)
+## hdrihaven-downloader
 
 This script is modified from https://github.com/Alzy/hdrihaven_dl
 
@@ -9,5 +9,5 @@ Open command line in desired directory and run:
 pip install -r requirements.txt
 ```
 ```bash
-python downloader.py <resolution> <category>
+python3 downloader.py <resolution> <category>
 ```
