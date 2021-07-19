@@ -43,11 +43,11 @@ for hdri in hdris:
     filename = href.query[2:] + '_' + resolution
 
     # DL link example
-    # https://hdrihaven.com/files/hdris/small_harbor_02_2k.hdr
+    # https://polyhaven.com/hdris/small_harbor_02_2k.hdr
     dl_url = (
-        'https://hdrihaven.com/files/hdris/' + filename
+        'https://polyhaven.com/hdris/' + filename
     )
-    thumbnail_url = 'https://hdrihaven.com' + thumbnail
+    thumbnail_url = 'https://polyhaven.com' + thumbnail
     print(dl_url)
     print(thumbnail_url)
 
