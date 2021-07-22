@@ -1,4 +1,4 @@
-## hdrihaven-downloader
+## polyhaven-hdri-downloader
 This script uses the [polyhaven API](https://github.com/Poly-Haven/Public-API) to download HDRI images by category, resolution and extention.
 The images are stored in folders per resolution.
 
