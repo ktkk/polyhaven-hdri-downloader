@@ -1,13 +1,13 @@
 ## hdrihaven-downloader
-
-This script is modified from https://github.com/Alzy/hdrihaven_dl
+This script uses the [polyhaven API](https://github.com/Poly-Haven/Public-API) to download HDRI images by category, resolution and extention.
+The images are stored in folders per resolution.
 
 # Usage
-Needs Python 3.
-Open command line in desired directory and run:
+Installing python requests module:
 ```bash
-pip install -r requirements.txt
+pip3 install requests
 ```
 ```bash
-python3 downloader.py <resolution> <category>
+# refer to the polyhaven website for available resolutions, categories and extentions
+python3 downloader.py <resolution> <category> <extention>
 ```
