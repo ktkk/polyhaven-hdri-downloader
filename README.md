@@ -9,5 +9,5 @@ pip3 install requests
 ```
 ```bash
 # refer to the polyhaven website for available resolutions, categories and extentions
-python3 downloader.py <resolution> <category> <extention>
+./downloader.py <resolution> <category> <extention>
 ```
